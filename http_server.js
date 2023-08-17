@@ -33,6 +33,12 @@ app.post('/test', function(req, res){
     res.send(req.body.username + " " + req.body.password)
 });
 
+// post route
+app.post('/accounts', function(req, res){
+    console.log(req.body.username, req.body.password);
+    res.send(req.body.username + " " + req.body.password)
+});
+
 // add user
 app.post('/add', function(req, res){
     var user = {
